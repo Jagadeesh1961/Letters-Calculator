@@ -1,0 +1,134 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+}
+
+.letters-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-container {
+    flex-direction: row;
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .content-container {
+    align-items: flex-start;
+    order: 0;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 22px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 42px;
+    text-align: start;
+  }
+}
+
+.phrase {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-type {
+  border: 1px solid #e4e7eb;
+  background: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  .input-type {
+    width: 350px;
+  }
+}
+
+.letter-count {
+  color: #219a6f;
+  font-family: 'Roboto';
+  background-color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
+  align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .letter-count {
+    align-self: start;
+    padding: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .letter-count {
+    padding: 30px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.image {
+  width: 100%;
+  order: 0;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image {
+    width: 550px;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 700px;
+  }
+}
